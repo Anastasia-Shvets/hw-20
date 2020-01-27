@@ -6,7 +6,7 @@ for (var i = 1; i < 21; i++) {
     ul.append(li)
 }
  
-ul.addEventListener("mousemove", function(e) {
-    console.log(document.elementFromPoint(e.clientX, e.clientY).tagName);
+ul.addEventListener("mousemove", function(event) {
+    console.log(document.elementFromPoint(event.clientX, event.clientY).tagName);
 }, false); 
 
